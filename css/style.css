@@ -1,0 +1,37 @@
+body, html {
+    font-family: Futura, Arial, sans-serif;
+    font-size: 16px;
+}
+
+section {
+	width: 70%;
+	margin: 0 auto;
+}
+
+nav {
+	text-transform: uppercase;
+	font-family: "Futura-CondensedMedium", sans-serif;
+	letter-spacing: .1rem;
+}
+
+#hero {
+	width: 100%;
+}
+
+a {
+	text-decoration: underline;
+	color: #D19684;
+}
+
+a:hover {
+	color: #dfb6a9;
+}
+
+nav a {
+	color: #222222;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #bfbfbf;
+}
