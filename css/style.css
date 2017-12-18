@@ -1,12 +1,35 @@
 body, html {
-    font-family: Futura, Arial, sans-serif;
+    font-family: Merriweather, Arial, sans-serif;
     font-size: 16px;
 }
 
 section {
-	width: 70%;
+	width: 60%;
 	margin: 0 auto;
 }
+
+section h2 {
+	font-weight: 200;
+}
+
+a {
+	text-decoration: underline;
+	color: #A6AE8F;
+}
+
+a:hover {
+	color: #B9C29F;
+}
+
+.hero {
+	width: 100%;
+}
+
+h1, h2, h3 {
+	font-family: Futura, Arial, sans-serif;
+}
+
+/* NAVIGATION --------------------------------------- */
 
 nav {
 	text-transform: uppercase;
@@ -14,17 +37,8 @@ nav {
 	letter-spacing: .1rem;
 }
 
-#hero {
-	width: 100%;
-}
-
-a {
-	text-decoration: underline;
-	color: #D19684;
-}
-
-a:hover {
-	color: #dfb6a9;
+nav ul {
+	padding-left: 0;
 }
 
 nav a {
@@ -33,5 +47,131 @@ nav a {
 }
 
 nav a:hover {
-	color: #bfbfbf;
+	color: #CED4BB;
 }
+
+#nav {
+	padding-bottom: 1rem;
+	padding-top: 2rem;
+}
+
+#nav a.selected, a.selected:link, a.selected:visited {
+	color: #CED4BB;
+}
+
+/* HOME ---------------------------------------- */
+
+#header {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#header h1 {
+	font-weight: normal;
+	padding-bottom: 1rem;
+}
+
+/* ABOUT --------------------------------------- */
+#about {
+	padding-top: 1rem;
+}
+
+#about h2 {
+	text-align: left;
+	padding-bottom: 1rem;
+}
+
+/* PROJECTS ------------------------------------ */
+
+
+#projects h2 {
+	padding-bottom: 4rem;
+	text-align: left;
+}
+
+.grid {
+	width: 100%;
+}
+
+.grid img {
+	width: 100%;
+}
+
+.grid-elem {
+	display: inline-block;
+	position: relative;
+    text-align: center;
+    color: white;
+    height: 100%;
+}
+
+.grid-elem h3 {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+}
+
+.second {
+	float: right;
+}
+
+
+
+/* SOCIAL LINKS -------------------------------------- */
+
+#social {
+	padding-bottom: 4rem;
+	clear: both;
+}
+
+.links {
+	text-align: center;
+	position: relative;
+}
+
+.links ul {
+	padding-left: 0;
+	margin: 0;
+}
+
+.links li {
+	display: inline-block;
+	padding: 0 1rem;
+}
+
+.links a, .links fa {
+	color: #222222;
+}
+
+/* EFFECTS ------------------------------------------- */
+
+.grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.grow:hover,
+.grow:focus,
+.grow:active {
+    transform: scale(1.5);
+}
+
+.grow-project:hover,
+.grow-project:focus,
+.grow-project:active {
+    transform: scale(1.1);
+}
+
+
