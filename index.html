@@ -13,47 +13,85 @@
         <meta property="og:description" content="This is a personal website by Jessica Slaughter.">
         <link rel="stylesheet" type="text/css" href="css/base.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://use.typekit.net/qbd1sla.css">
         <link rel="shortcut icon" type="image/x-icon" src="img/favicon.ico">
+        <script src="https://use.fontawesome.com/496b7021cc.js"></script>
         <script src="js/script.js"></script>
     </head>
     <body>
-        <section id="nav">
-            <nav>
-                <ul>
-                    <li><a href="https://www.jessicaslaughter.me/">Home</a></li>
-                    <li><a href="https://www.jessicaslaughter.me/about.html">About</a></li>
-                    <li><a href="https://www.jessicaslaughter.me/blog" target="_blank">Blog</a></li>
-                    <li><a href="https://twitter.com/jessslaughter_" target="_blank">Twitter</a></li>
-                    <li><a href="https://www.jessicaslaughter.me/projects.html">Projects</a></li>
-                </ul>
-            </nav>
-        </section>
     	<section id="header">
+            <h1>Jessica Slaughter</h1>
     		<img class="hero" src="img/jessicaslaughter.jpeg">
     	</section>
         <section id="about">
-            <p>Hey there, I'm <strong>Jessica!</strong> Currently, you can find me studying Computer Engineering at The University of Texas at Austin. I'm interested in using technology to help people be successful and impactful, specifically in the context of education and entrepreneurship. My passions include blogging, <a href="https://jessicaslaughter.co/blog/category/blogging/coding/" target="_blank">teaching others about coding</a>, entrepreneurship, and exploring the arts to improve myself as an engineer. After graduation, I'll be joining Google as an Engineering Resident.</p> 
-            <p>On the side, I run a <a href="https://jessicaslaughter.co" target="_blank">lifestyle blog</a> read by hundreds of thousands of high school and college aged women where I write about college life, wellness, and other personal ramblings. I've had the opportunity to collaborate with several brands over the years, including Target, PayPal, Dove, Society6, and Evernote, through sharing authentic stories about their products.</p>
+            <p>Hey there, I'm <strong>Jessica!</strong> Currently, you can find me studying Computer Engineering at The University of Texas at Austin. My interests lie in the use of technology to impact the education and health industries. I'm particularly interested in the way nutrition and lifestyle affect a person's health and how empowering people with knowledge about their bodies through technology can impact their wellbeing and help them take action against preventative illnesses. I'm also passionate about <a href="https://jessicaslaughter.co" target="_blank">blogging</a>, <a href="https://jessicaslaughter.co/blog/category/blogging/coding/" target="_blank">teaching others about coding</a>, supporting diversity efforts, and exploring the arts to improve myself as an engineer. After graduation, I'll join Google as an Engineering Resident.</p> 
         </section>
-         <section id="projects">
-            <h2>Projects //</h2>
+        <section id="projects">
+            <h2>Projects</h2>
             <div class="grid">
-                <div class="one-third grid-elem grow grow-project first">
-                    <a href="https://jessicaslaughter.github.io/TodoList/">
+                <div class="one-third grid-elem grow grow-project first" onclick="show('startup-project')">
+                    <h3>3 Day Startup</h3>
+                    <img class="grid-item" src="img/startup-project.jpg">
+                </div>
+                <div class="one-third grid-elem grow grow-project" onclick="show('blog-project')">
+                    <h3>Lifestyle Blog</h3>
+                    <img class="grid-item" src="img/blog-project.jpg">
+                </div>
+                <div class="one-third grid-elem grow grow-project" onclick="show('todo-project')">
                     <h3>To Do List</h3>
-                    <img class="grid-item" src="img/todo-project.jpg"></a>
-                </div>
-                <div class="one-third grid-elem grow grow-project">
-                    <a href="https://jessicaslaughter.co"><h3>Lifestyle Blog</h3>
-                    <img class="grid-item" src="img/blog-project.jpg"></a>
-                </div>
-                <div class="one-third grid-elem grow grow-project">
-                    <a href="https://jessicaslaughter.co/blog/stay-organized-college-using-evernote/"><h3>Evernote</h3>
-                    <img class="grid-item" src="img/evernote-project.jpg"></a>
+                    <img class="grid-item" src="img/todo-project.jpg">
                 </div>
             </div>
+        </section>
+        <div id="startup-project" class="project hide">
+            <span class="hide-icon" onclick="hide('startup-project')"><i class="fa fa-window-close fa-2x" aria-hidden="true"></i></span>
+            <div class="project-content">
+                <h3>3 Day Startup</h3>
+                <p>Four-year organizer of <a href="http://3daystartup.org/">3 Day Startup's</a> flagship program in Austin, TX. Recruited and interviewed students and working professionals in the Austin area and organized workshops, bootcamps, and other events to promote the program.</p>
+                <img src="img/startup-1.jpg">
+                <img src="img/startup-3.jpg">
+                <img src="img/startup-2.jpg">
+            </div>
+        </div>
+        <div id="blog-project" class="project hide">
+            <span class="hide-icon" onclick="hide('blog-project')"><i class="fa fa-window-close fa-2x" aria-hidden="true"></i></span>
+            <div class="project-content">    
+                <h3>Lifestyle Blog</h3>
+                <p>Jessica Slaughter is a <a href="https://jessicaslaughter.co/" target="_blank">lifestyle blog</a> devoted to helping young women succeed in college and their career. Over the past four years, I've written over 100 posts on everything from study tips to wellness habits to building your own blog. I've garnered an audience of over 100,000 monthly readers and collaborated with brands including Target, PayPal, Dove, Society6, and Evernote, through sharing authentic stories about their products. These are some of my favorite brand collaborations:
+                <ul>
+                    <li><a href="https://jessicaslaughter.co/blog/stay-organized-college-using-evernote/" target="_blank">How I Stay Organized in College</a> - Evernote Instagram takeover</li>
+                    <li><a href="https://jessicaslaughter.co/blog/wellness-resolutions-goals-new-year/" target="_blank">Wellness Tips for the New Year</a> - Evolution Fresh</li>
+                    <li><a href="https://jessicaslaughter.co/blog/sprucing-college-apartment-devine-color/" target="_blank">Sprucing Up My Apartment</a> - Target and Devine Color</li>
+                    <li><a href="https://jessicaslaughter.co/blog/tips-living-off-campus-college/" target="_blank">Tips for Living Off-Campus in College</a> - CORT</li>
+                    <li><a href="https://jessicaslaughter.co/blog/hiking-big-bend-national-park/" target="_blank">Hiking Through Big Bend National Park</a> - Clif Bar Company</li>
+                </ul>
+                </p>
+                <img src="img/Clif1.jpg">
+                <img src="img/Starbucks3.jpg">
+                <img src="img/february-2.jpg">
+            </div>
+        </div>
+         <div id="todo-project" class="project hide">
+            <span class="hide-icon" onclick="hide('todo-project')"><i class="fa fa-window-close fa-2x" aria-hidden="true"></i></span>
+            <div class="project-content">
+                <h3>Todo List</h3>
+                <p>I made this Todo List app while taking a <a href="https://www.udemy.com/the-web-developer-bootcamp/learn/v4/overview" target="_blank">Web Development Bootcamp</a> class on Udemy.</p>
+                <img src="img/todo-gif.gif">
+                <p>Link: <a href="https://jessicaslaughter.github.io/TodoList/" target="_blank">Todo List</a></p>
+            </div>
+        </div>
+        <section id="other">
+            <h2>Places you can find me</h2>
+                <ul>
+                    <li><a href="https://twitter.com/jessslaughter_" target="_blank">Twitter</a></li>
+                    <li><a href="https://instagram.com/jessicaslaughter" target="_blank">Instagram</a></li>
+                    <li><a href="https://pinterest.com/jessslaughter_" target="_blank">Pinterest</a></li>
+                    <li><a href="https://linkedin.com/in/jessicaslaughter" target="blank">LinkedIn</a></li>
+                    <li><a href="https://jessicaslaughter.co" target="_blank">Lifestyle Blog</a></li>
+                    <li><a href="https://jessicaslaughter.me/blog" target="_blank">Personal Blog</a></li>
+                    <li><a href="https://github.com/jessicaslaughter" target="blank">Github</a></li>
+                    <li><a href="emailto:jessica.t.slaughter@gmail.com">Email</a></li>
+                </ul>
         </section>
     </body>
 </html>

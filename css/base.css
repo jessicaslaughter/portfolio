@@ -13,11 +13,11 @@ h1 {
 }
 
 h2 {
-	font-size: 30px; 
+	font-size: 24px; 
 }
 
 h3 {
-	font-size: 20px; 
+	font-size: 22px; 
 }
 
 h4 {
@@ -58,7 +58,7 @@ p {
 }
 
 section { 
-    padding: 2rem 0; 
+    padding: 1rem 0; 
 }
 
 footer {
