@@ -14,6 +14,8 @@ function hide(id) {
 	// project.style.display = 'none';
 	project.classList.remove("show");
 	project.classList.add("hide");
-	setTimeout(function(){ project.style.zIndex = -100; }, 200);
+	setTimeout(function(){ 
+		project.style.zIndex = -100;
+	}, 200);
 }
 
